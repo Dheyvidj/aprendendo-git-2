@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Essencial para cálculos de largura */
+}
+body {
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+  background-color: #f8f9fa;
+  line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: cadetblue;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 400px;
+    padding: 80px 0px;
+}
+
+.hero-text, .hero-media {
+    flex: 1;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    align-items: start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+    /* @media (max-width: 760px) {
+
+        .cards{
+            flex-direction: column;
+        }
+
+    } */
+
