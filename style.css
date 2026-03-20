@@ -1,3 +1,8 @@
+:root {
+    --primary-color:#1e00fe;
+    --pading-padrao: 20px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,25 +18,28 @@ body {
 .container {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 var(--pading-padrao);
 }
 
 .header-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: var(--pading-padrao) 0;
+    background-color: var(--primary-color);
 }
 
 .nav {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    
+    
 }
 
 .nav-link {
     text-decoration: none;
-    color: #555;
+    color: white;
     font-weight: 600;
 }
 
@@ -56,6 +64,14 @@ body {
     align-items: start;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+
+.card {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 05);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: var(--primary-color);
 }
 
     /* @media (max-width: 760px) {
