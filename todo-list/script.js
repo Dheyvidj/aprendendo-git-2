@@ -4,8 +4,8 @@ const listaTarefas = document.querySelector('#lista-tarefas');
 const contador = document.querySelector('#contador');
 
 
-JSON.parse(window.localStorage.getItem('tarefas')); 
-let tarefas = [];
+
+let tarefas = JSON.parse(window.localStorage.getItem('tarefas')); 
 
 let proximoId = 1;
 
